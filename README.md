@@ -1,2 +1,2 @@
 # website-templates
-Many templates can be used to build websites
+The code used to create the template websites

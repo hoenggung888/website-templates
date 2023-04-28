@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Website Template 1 - hoenggung888</title>
+        
+        <!-- To save from changing repositories leading to relinking throughout the site, implement the following code: -->
+
+        <!-- Adjustable linking -->
+        <script>
+            const baseurl = window.location.pathname;
+            var script = document.createElement("script");
+            script.src = baseurl+"assets/js/main1.js";
+        </script>
+
+        <!-- CSS calling -->
+        <script>
+            document.write('<link rel="stylesheet" href="'+baseurl+'assets/css/style1.css">');
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <nav></nav>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <article>
+                    <figure></figure>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div class="wrapper"></div>
+        </footer>
+    </body>
+</html>
