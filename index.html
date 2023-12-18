@@ -6,14 +6,16 @@
         
         <!-- Adjustable linking -->
         <script>
-            const baseurl = window.location.pathname;
-            var script = document.createElement("script");
-            script.src = baseurl+"main.js";
+            let baseurl = window.location.pathname;
+            baseurl = baseurl.replace('/index.html', '/')
+            var scripts = document.createElement("script");
+            scripts.src = baseurl+"main.js";
         </script>
 
         <!-- CSS calling -->
         <script>
             document.write('<link rel="stylesheet" href="'+baseurl+'style.css">');
+            // document.write('<link rel="icon" type="image/x-icon" href="'+baseurl+'assets/images/logos/DawsonRoboticsSmallLogoBlueFill.png"')
         </script>
 
     </head>
@@ -31,5 +33,11 @@
         <footer>
             <div class="wrapper"></div>
         </footer>
+        
+        <!-- Javascript calling -->
+        <script>
+            var body = document.getElementsByTagName("body")[0];
+            body.appendChild(scripts);
+        </script>
     </body>
 </html>

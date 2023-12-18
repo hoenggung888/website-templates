@@ -4,31 +4,80 @@
         <meta charset="UTF-8">
         <title>Website Template 1 - hoenggung888</title>
         
-        <!-- To save from changing repositories leading to relinking throughout the site, implement the following code: -->
+        <!-- solution provided by hoenggung888 -->
 
-        <!-- Adjustable linking -->
+        <!-- to save your sanity from relinking throughout the site code from changing repositories in github, implement the following script code in the head: -->
+
+        <!-- adjustable linking -->
         <script>
-            const baseurl = window.location.pathname;
-            var script = document.createElement("script");
-            script.src = baseurl+"assets/js/main1.js";
+            let baseurl = window.location.pathname; // gather name of current baseurl
+            baseurl = baseurl.replace('/index.html', '/') // remove index.html from the baseurl (if it has)
+            var script = document.createElement("script"); // creates a new script element in the html
+            script.src = baseurl+"assets/js/main1.js"; // applies the source directory for the script element
         </script>
 
-        <!-- CSS calling -->
+        <!-- css calling -->
         <script>
-            document.write('<link rel="stylesheet" href="'+baseurl+'assets/css/style1.css">');
+            document.write('<link rel="stylesheet" href="'+baseurl+'assets/css/style1.css">'); // writes the source for the css code
         </script>
 
     </head>
     <body>
         <header>
             <div class="wrapper">
-                <nav></nav>
+                <nav>
+                    <a href=""><h1>hoenggung888</h1></a>
+                </nav>
+                <nav class="collapsible">
+                    <a href="projects"><h1>Projects</h1></a>
+                </nav>
             </div>
         </header>
         <main>
             <div class="wrapper">
                 <article>
-                    <figure></figure>
+                    <figure>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nemo umquam voluptatem appellavit, appellat; Quae cum dixisset paulumque institisset, Quid est? Tu vero, inquam, ducas licet, si sequetur; Negare non possum. An hoc usque quaque, aliter in vita? Duo Reges: constructio interrete. Numquam facies. Sed ego in hoc resisto; </p>
+
+                        <p>Sit enim idem caecus, debilis. Cur deinde Metrodori liberos commendas? Videamus animi partes, quarum est conspectus illustrior; Quae diligentissime contra Aristonem dicuntur a Chryippo. Equidem e Cn. </p>
+
+                        <p>Qua tu etiam inprudens utebare non numquam. Bork Sit enim idem caecus, debilis. </p>
+
+                        <p>Bonum integritas corporis: misera debilitas. Contemnit enim disserendi elegantiam, confuse loquitur. Teneo, inquit, finem illi videri nihil dolere. Sint ista Graecorum; Sed ego in hoc resisto; Cur id non ita fit? Nam Pyrrho, Aristo, Erillus iam diu abiecti. Nunc omni virtuti vitium contrario nomine opponitur. </p>
+
+                        <p>Bork Solum praeterea formosum, solum liberum, solum civem, stultost; Quod autem satis est, eo quicquid accessit, nimium est; Si id dicis, vicimus. </p>
+
+                        <p>Idem iste, inquam, de voluptate quid sentit? Is es profecto tu. Quid de Pythagora? Quid nunc honeste dicit? Quia dolori non voluptas contraria est, sed doloris privatio. Bork </p>
+
+                        <p>Non est igitur voluptas bonum. Paria sunt igitur. Quis istud possit, inquit, negare? Consequens enim est et post oritur, ut dixi. </p>
+
+                        <p>Terram, mihi crede, ea lanx et maria deprimet. Hoc mihi cum tuo fratre convenit. </p>
+
+                        <p>Cur id non ita fit? Idem iste, inquam, de voluptate quid sentit? Compensabatur, inquit, cum summis doloribus laetitia. Haec et tu ita posuisti, et verba vestra sunt. Hoc simile tandem est? </p>
+
+                        <p>Bork Negare non possum. Ut id aliis narrare gestiant? Apparet statim, quae sint officia, quae actiones. Teneo, inquit, finem illi videri nihil dolere. Sed plane dicit quod intellegit. Itaque ab his ordiamur. Nam de isto magna dissensio est. </p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam nemo umquam voluptatem appellavit, appellat; Quae cum dixisset paulumque institisset, Quid est? Tu vero, inquam, ducas licet, si sequetur; Negare non possum. An hoc usque quaque, aliter in vita? Duo Reges: constructio interrete. Numquam facies. Sed ego in hoc resisto; </p>
+
+                        <p>Sit enim idem caecus, debilis. Cur deinde Metrodori liberos commendas? Videamus animi partes, quarum est conspectus illustrior; Quae diligentissime contra Aristonem dicuntur a Chryippo. Equidem e Cn. </p>
+
+                        <p>Qua tu etiam inprudens utebare non numquam. Bork Sit enim idem caecus, debilis. </p>
+
+                        <p>Bonum integritas corporis: misera debilitas. Contemnit enim disserendi elegantiam, confuse loquitur. Teneo, inquit, finem illi videri nihil dolere. Sint ista Graecorum; Sed ego in hoc resisto; Cur id non ita fit? Nam Pyrrho, Aristo, Erillus iam diu abiecti. Nunc omni virtuti vitium contrario nomine opponitur. </p>
+
+                        <p>Bork Solum praeterea formosum, solum liberum, solum civem, stultost; Quod autem satis est, eo quicquid accessit, nimium est; Si id dicis, vicimus. </p>
+
+                        <p>Idem iste, inquam, de voluptate quid sentit? Is es profecto tu. Quid de Pythagora? Quid nunc honeste dicit? Quia dolori non voluptas contraria est, sed doloris privatio. Bork </p>
+
+                        <p>Non est igitur voluptas bonum. Paria sunt igitur. Quis istud possit, inquit, negare? Consequens enim est et post oritur, ut dixi. </p>
+
+                        <p>Terram, mihi crede, ea lanx et maria deprimet. Hoc mihi cum tuo fratre convenit. </p>
+
+                        <p>Cur id non ita fit? Idem iste, inquam, de voluptate quid sentit? Compensabatur, inquit, cum summis doloribus laetitia. Haec et tu ita posuisti, et verba vestra sunt. Hoc simile tandem est? </p>
+
+                        <p>Bork Negare non possum. Ut id aliis narrare gestiant? Apparet statim, quae sint officia, quae actiones. Teneo, inquit, finem illi videri nihil dolere. Sed plane dicit quod intellegit. Itaque ab his ordiamur. Nam de isto magna dissensio est. </p>
+
+                    </figure>
                 </article>
             </div>
         </main>
